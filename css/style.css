@@ -1,155 +1,335 @@
-* {
-  outline: none;
-  font-family: Arial;
+@media(min-width:1024px) {
+  * {
+    outline: none;
+    font-family: Arial;
+  }
+
+  body {
+    background-color: yellow;
+  }
+
+  header {
+    text-align: center;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+  }
+
+  section {
+    width: auto;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font: 20pt Arial;
+    color: white;
+  }
+
+  #paragrafo {
+    font-style: italic;
+  }
+
+  #paragrafo:hover {
+    font-size: 30pt;
+    color: black;
+    transition: 1s;
+  }
+
+  #paragrafo:not( :hover) {
+    font-size: 20pt;
+    transition-duration: 1s;
+  }
+
+  .box {
+    float: left;
+    position: inline;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 29px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+    margin-right: 50px;
+    border-radius: 50%;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 3px 1px black;
+  }
+
+  .box:hover {
+    box-shadow: none;
+    background-color: black;
+    color: white;
+    font-size: 60pt;
+    width: 120px;
+    height: 120px;
+    transition: 1s;
+  }
+
+  .box:not( :hover) {
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+  }
+
+  .numRandom {
+    text-align: center;
+    font-size: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 8px 1px black;
+  }
+
+  .botao {
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: 25px;
+    font: 20pt Arial;
+    text-transform: uppercase;
+    width: 130px;
+    height: 50px;
+    margin: auto;
+    box-shadow: 0px 3px 1px black;
+  }
+
+  .botao:hover {
+    border-radius: 10px;
+  }
+
+  .botao:active {
+    position: relative;
+    top: 23px;
+    box-shadow: none;
+  }
+
+  #l1 {
+    color: rgb(255, 36, 36);
+  }
+
+  #l2 {
+    color: rgb(20, 94, 255);
+  }
+
+  #l3 {
+    color: rgb(148, 10, 246);
+  }
+
+  #l4 {
+    color: rgb(58, 216, 58);
+  }
+
+  #l5 {
+    color: rgb(255, 122, 188);
+  }
+
+  pre {
+    margin-bottom: 100px;
+  }
+
+  .letra:hover {
+    transform: rotateX(360deg);
+    transition: 1s;
+  }
+
+  .letra:not( :hover) {
+    transform: rotateX(0deg);
+    transition: 1s;
+  }
+
+  #frist {
+    font-size: 50pt;
+    color: black;
+  }
+
+  #numero {
+    font-weight: bolder;
+    font-size: 200pt;
+  }
+
+  #caracter {
+    font-size: 50pt;
+  }
 }
 
-body {
-  background-color: yellow;
-}
+@media(max-width:400px) {
+  * {
+    outline: none;
+    font-family: Arial;
+  }
 
-header {
-  text-align: center;
-  font-size: 20pt;
-  display: flex;
-  justify-content: center;
-}
+  body {
+    background-color: yellow;
+  }
 
-section {
-  width: auto;
-  height: auto;
-}
+  header {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+  }
 
-footer {
-  text-align: center;
-  margin-bottom: 10px;
-}
+  section {
+    width: auto;
+    height: auto;
+  }
 
-p {
-  font: 20pt Arial;
-  color: white;
-}
+  footer {
+    text-align: center;
+    font-size: 10pt;
+    margin-bottom: 10px;
+  }
 
-#paragrafo {
-  font-style: italic;
-}
+  #paragrafo {
+    font-size: 10pt;
+    font-style: italic;
+  }
 
-#paragrafo:hover {
-  font-size: 30pt;
-  color: black;
-  transition: 1s;
-}
+  #paragrafo:hover {
+    font-size: 15pt;
+    color: black;
+    transition: 1s;
+  }
 
-#paragrafo:not( :hover) {
-  font-size: 20pt;
-  transition-duration: 1s;
-}
+  #paragrafo:not( :hover) {
+    color: white;
+    font-size: 10pt;
+    transition-duration: 1s;
+  }
 
-.box {
-  float: left;
-  position: inline;
-  font-size: 30pt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 29px;
-  margin-bottom: 10px;
-  margin-left: 55px;
-  margin-right: 50px;
-  border-radius: 50%;
-  background-color: white;
-  width: 100px;
-  height: 100px;
-  box-shadow: 0px 3px 1px black;
-}
+  .box {
+    float: left;
+    position: inline;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 3px 1px black;
+  }
 
-.box:hover {
-  box-shadow: none;
-  background-color: black;
-  color: white;
-  font-size: 60pt;
-  width: 120px;
-  height: 120px;
-  transition: 1s;
-}
+  .box:hover {
+    box-shadow: none;
+    background-color: black;
+    color: white;
+    font-size: 25pt;
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+  }
 
-.box:not( :hover) {
-  width: 100px;
-  height: 100px;
-  transition: 1s;
-}
+  .box:not( :hover) {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+  }
 
-.numRandom {
-  text-align: center;
-  font-size: 50pt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: auto;
-  background-color: white;
-  width: 500px;
-  height: 500px;
-  box-shadow: 0px 8px 1px black;
-}
+  .numRandom {
+    text-align: center;
+    font-size: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    background-color: white;
+    width: 330px;
+    height: 330px;
+    box-shadow: 0px 8px 1px black;
+  }
 
-.botao {
-  position: relative;
-  top: 20px;
-  border: none;
-  border-radius: 25px;
-  font: 20pt Arial;
-  text-transform: uppercase;
-  width: 130px;
-  height: 50px;
-  margin: auto;
-  box-shadow: 0px 3px 1px black;
-}
+  .botao {
+    position: relative;
+    top: 20px;
+    border: none;
+    border-radius: 25px;
+    font: 20pt Arial;
+    text-transform: uppercase;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    box-shadow: 0px 3px 1px black;
+  }
 
-.botao:hover {
-  border-radius: 10px;
-}
+  .botao:hover {
+    border-radius: 10px;
+  }
 
-.botao:active {
-  position: relative;
-  top: 23px;
-  box-shadow: none;
-}
+  .botao:active {
+    position: relative;
+    top: 23px;
+    box-shadow: none;
+  }
 
-#l1 {
-  color: rgb(255, 36, 36);
-}
+  #l1 {
+    color: rgb(255, 36, 36);
+  }
 
-#l2 {
-  color: rgb(20, 94, 255);
-}
+  #l2 {
+    color: rgb(20, 94, 255);
+  }
 
-#l3 {
-  color: rgb(148, 10, 246);
-}
+  #l3 {
+    color: rgb(148, 10, 246);
+  }
 
-#l4 {
-  color: rgb(58, 216, 58);
-}
+  #l4 {
+    color: rgb(58, 216, 58);
+  }
 
-#l5 {
-  color: rgb(255, 122, 188);
-}
+  #l5 {
+    color: rgb(255, 122, 188);
+  }
 
-pre {
-  margin-bottom: 100px;
-}
+  pre {
+    margin-bottom: 100px;
+  }
 
-.letra:hover {
-  transform: rotateX(360deg);
-  transition: 1s;
-}
+  p {
+    color: white;
+  }
 
-.letra:not( :hover ) {
-  transform: rotateX(0deg);
-  transition: 1s;
-}
+  .letra:hover {
+    transform: rotateX(360deg);
+    transition: 1s;
+  }
 
-#frist {
-  font-size: 50pt;
-  color: black;
+  .letra:not( :hover) {
+    transform: rotateX(0deg);
+    transition: 1s;
+  }
+
+  #frist {
+    font-size: 30pt;
+    color: black;
+  }
+
+  #numero {
+    font-weight: bolder;
+    font-size: 150pt;
+  }
+
+  #caracter {
+    font-size: 30pt;
+  }
 }

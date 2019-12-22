@@ -1,52 +1,99 @@
-h2 {
-  font-size: 30pt;
+@media(min-width:1024px) {
+  h2 {
+    font-size: 30pt;
+  }
+  
+  hr {
+    border-color: black;
+  }
+  
+  .principal {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #coluna1, #coluna2, #coluna3, #coluna4, #coluna5 {
+    width: 210px;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #coluna1:hover, #coluna2:hover, #coluna3:hover, #coluna4:hover, #coluna5:hover {
+    width: 230px;
+    transition: 1s;
+  }
+  
+  #coluna1:not(:hover), #coluna2:not(:hover), #coluna3:not(:hover), #coluna4:not(:hover), #coluna5:not(:hover) {
+    width: 210px;
+    transition: 1s;
+  }
+  
+  #coluna1 {
+    background-color: rgb(255, 36, 36);
+  }
+  
+  #coluna2 {
+    background-color: rgb(20, 94, 255);
+  }
+  
+  #coluna3 {
+    background-color: rgb(148, 10, 246);
+  }
+  
+  #coluna4 {
+    background-color: rgb(8, 255, 8);
+  }
+
+  #coluna5 {
+    background-color: rgb(255, 122, 188);
+  } 
 }
 
-hr {
-  border-color: black;
-}
+@media(max-width:400px) {
+  h2 {
+    font-size: 30pt;
+  }
+  
+  hr {
+    border-color: black;
+  }
+  
+  .principal {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #coluna1, #coluna2, #coluna3, #coluna4, #coluna5 {
+    width: 60px;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #coluna1 {
+    background-color: rgb(255, 36, 36);
+  }
+  
+  #coluna2 {
+    background-color: rgb(20, 94, 255);
+  }
+  
+  #coluna3 {
+    background-color: rgb(148, 10, 246);
+  }
+  
+  #coluna4 {
+    background-color: rgb(8, 255, 8);
+  }
 
-.principal {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-#coluna1, #coluna2, #coluna3, #coluna4, #coluna5 {
-  width: 210px;
-  float: left;
-  text-align: center;
-  margin: 5px;
-  padding: 5px;
-}
-
-#coluna1:hover, #coluna2:hover, #coluna3:hover, #coluna4:hover, #coluna5:hover {
-  width: 230px;
-  transition: 1s;
-}
-
-#coluna1:not(:hover), #coluna2:not(:hover), #coluna3:not(:hover), #coluna4:not(:hover), #coluna5:not(:hover) {
-  width: 210px;
-  transition: 1s;
-}
-
-#coluna1 {
-  background-color: rgb(255, 36, 36);
-}
-
-#coluna2 {
-  background-color: rgb(20, 94, 255);
-}
-
-#coluna3 {
-  background-color: rgb(148, 10, 246);
-}
-
-#coluna4 {
-  background-color: rgb(8, 255, 8);
-}
-
-#coluna5 {
-  background-color: rgb(255, 122, 188);
+  #coluna5 {
+    background-color: rgb(255, 122, 188);
+  } 
 }

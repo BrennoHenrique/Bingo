@@ -12,13 +12,12 @@ var vetor = [];
 botaoElement.addEventListener('click', () => {
   numRandomElement.style.fontSize = '200pt';
 
-  let letra = null;
   let cond = true;
   let condAux = false;
   var armazenadorTemp = 0;
 
   while (cond === true) {
-    armazenadorTemp = Math.floor(Math.random() * 75);
+    armazenadorTemp = Math.floor(Math.random() * 76);
 
     if (vetor.length == 74) {
       armazenadorTemp = ultimoNum(vetor);
@@ -56,7 +55,6 @@ botaoElement.addEventListener('click', () => {
   if (condAux != true) {
     vetor.push(armazenadorTemp);
 
-    numeroElement.style.fontSize = '200pt';
     numeroElement.style.color = 'black';
     caracterElement.style.color = 'black';
 
