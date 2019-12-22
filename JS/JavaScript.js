@@ -76,9 +76,9 @@ function VerificaNum(vetor, num) {
   for (let indice = 0; indice < vetor.length && cond !== true; indice++) {
     if (num > 0 && num < 76) {
       if (vetor[indice] == num) {
-        cond = true
+        cond = true;
       } else {
-        cond = false
+        cond = false;
       }
     } else {
       cond = true;
