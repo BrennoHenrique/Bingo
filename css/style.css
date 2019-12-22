@@ -165,7 +165,7 @@
   }
 }
 
-@media(max-width:400px) {
+@media(max-width:800px) {
   * {
     outline: none;
     font-family: Arial;
