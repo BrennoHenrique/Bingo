@@ -6,6 +6,7 @@ const botaoElement = document.querySelector('input.botao');
 const caracterElement = document.querySelector('p#caracter');
 const numeroElement = document.querySelector('p#numero');
 const fristElement = document.querySelector('p#frist');
+const paragrafoElement = document.querySelector('p#paragrafo');
 
 var vetor = [];
 
@@ -119,4 +120,10 @@ function VerificaLetra(armazenadorTemp) {
   } else if (armazenadorTemp > 60 && armazenadorTemp <= 75) {
     caracterElement.innerHTML = 'O';
   }
+}
+
+paragrafoElement.addEventListener('click', LinkRepositorio);
+
+function LinkRepositorio() {
+  window.open('https://github.com/BrennoHenrique/Bingo');
 }
