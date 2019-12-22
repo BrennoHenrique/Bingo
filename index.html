@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/stylePageInicial.css">
+  <title>Bingo</title>
+</head>
+
+<body>
+  <h1>Desenvolvido por: Brenno Henrique Santos Oliveira</h1>
+
+  <div>
+    <input type="button" class="botao" value="INICIAR">
+  </div>
+
+  <script>
+    const botaoElement = document.querySelector('input.botao')
+    botaoElement.addEventListener('click', () => {
+      DiminuirBotao();
+    });
+
+    function DiminuirBotao() {
+      botaoElement.style.color = 'white';
+      botaoElement.style.fontSize = '0pt';
+      botaoElement.style.padding = '0px';
+      botaoElement.style.width = '300px';
+      botaoElement.style.height = '10px';
+      botaoElement.style.transition = '1s';
+
+      setTimeout(Rotate, 1000);
+    }
+
+    function Rotate() {
+      botaoElement.style.marginTop = '250px';
+      botaoElement.style.transform = 'rotate(8000deg)';
+      botaoElement.style.transition = '10s';
+
+      setTimeout(linkPage, 4000);
+    }
+
+    function linkPage() {
+      window.location.href = 'page2.html';
+    }
+  </script>
+</body>
+
+</html>
