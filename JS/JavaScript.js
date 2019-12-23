@@ -151,6 +151,12 @@ function Inicial(){
 function NumerosRamdom() {
   let num = Math.floor(Math.random() * 76);
 
+  if (num == 0) {
+    num += 1;
+  } else if (num == 76) {
+    num -= 1;
+  }
+
   numRandomElement.style.backgroundColor = 'red';
   numeroElement.innerHTML = `${num}`;
   fristElement.innerHTML = '';
