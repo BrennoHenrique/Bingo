@@ -34,6 +34,6 @@ numRandomElement.addEventListener('mouseout', function Out() {
   caracterElement.style.color = 'black';
   caracterElement.style.transition = '1s';
   
-  numRandomElement.style.backgroundColor = 'white';
+  numRandomElement.style.backgroundColor = 'rgb(8, 255, 8)';
   numRandomElement.style.transition = '1s';
 });
